@@ -11,7 +11,7 @@ const IngredientItem = require('./models/ingredient.js');
 
 
 // MIDDLEWARE
-const whitelist = ["http://localhost:3003/", "http://localhost:3000"]
+const whitelist = ["http://localhost:3003/", "http://localhost:3000", "https://hoochnet.herokuapp.com"]
 const corsOptions = {
     origin: function (origin, callback) {
         if (whitelist.indexOf(origin) >= 0) {
